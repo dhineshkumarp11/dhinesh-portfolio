@@ -1,0 +1,139 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 0 5%;
+}
+
+.hero-glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 4rem 3rem;
+  text-align: center;
+  max-width: 800px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.greeting-text {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  transition: opacity 0.5s ease;
+}
+
+.hero-glass-card h1 {
+  font-size: 4.5rem;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #8b5cf6, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-glass-card h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+}
+
+.hero-glass-card p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.8rem 2rem;
+  border-radius: 50px; /* Pill shape is very trendy */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: white;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px var(--accent-glow);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--glass-border);
+}
+
+.btn-secondary:hover {
+  background: var(--glass-bg);
+  border-color: var(--accent-color);
+}
+/* --- Add this to the very bottom of src/components/Hero.css --- */
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 5%;
+    min-height: auto; /* Allows the section to shrink if needed */
+  }
+
+  .hero-glass-card {
+    padding: 2.5rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 16px;
+  }
+
+  .greeting-text {
+    font-size: 1.2rem;
+  }
+
+  .hero-glass-card h1 {
+    font-size: 2.5rem; /* Scaled down drastically for mobile */
+  }
+
+  .hero-glass-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-glass-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1.8rem;
+    padding: 0 0.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column; /* Stacks the buttons vertically */
+    gap: 1rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't break the width */
+  }
+}

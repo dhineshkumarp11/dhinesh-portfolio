@@ -1,0 +1,100 @@
+.projects-section {
+  padding: 6rem 5%;
+}
+
+.projects-container h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  background: linear-gradient(135deg, #fff, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* The Bento Grid Magic */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle glow on hover */
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(139, 92, 246, 0.5);
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card h3, .project-card p, .project-card span, .project-card a {
+  position: relative;
+  z-index: 1;
+}
+
+.project-card h3 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  color: var(--text-muted);
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.tech-stack {
+  display: inline-block;
+  background: rgba(139, 92, 246, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #c4b5fd;
+  margin: 1.5rem 0;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.project-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--accent-color);
+}
