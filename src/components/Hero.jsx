@@ -28,7 +28,7 @@ const Hero = () => {
           
           {/* 👇 Here is your new Resume Button 👇 */}
           <a 
-            href="https://drive.google.com/file/d/16LuEbDRoZef_lIKA-UpjCA-qLnglOX7Z/view?usp=sharing" 
+            href="https://drive.google.com/file/d/130Fixmg5HgZDQDVbwz-aj4oOhJdph6cr/view?usp=sharing" 
             target="_blank" 
             rel="noreferrer" 
             className="btn-secondary"

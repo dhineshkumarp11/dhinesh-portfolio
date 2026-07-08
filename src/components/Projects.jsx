@@ -4,6 +4,12 @@ import './Projects.css';
 const Projects = () => {
   const projectList = [
     {
+      title: "Academic Knowledge Engine",
+      description: "Developed an AI-powered academic knowledge management platform using the MERN stack. Integrated Google Gemini API to automatically summarize research papers into structured study notes. Implemented secure RESTful APIs, document management, search functionality, and scalable CRUD operations with MongoDB.",
+      tech: "MongoDB, Express.js, React.js, Node.js, Google Gemini API",
+      link: "https://academic-knowledge-engine.vercel.app/"
+    },
+    {
       title: "Todos Application",
       description: "Built a persistent task-tracking app with full CRUD functionality. Implemented dynamic UI updates using JavaScript DOM manipulation and state persistence via localStorage.",
       tech: "HTML, CSS, JS, Bootstrap",

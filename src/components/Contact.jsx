@@ -22,7 +22,7 @@ const Contact = () => {
         <div className="social-links">
           <a href="https://github.com/dhineshkumarp11" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/pdhineshkumar" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://leetcode.com/u/DHINESHKUMAR56_/" target="_blank" rel="noreferrer">LeetCode</a>
+          <a href="https://leetcode.com/u/dhineshkumarp11/" target="_blank" rel="noreferrer">LeetCode</a>
         </div>
       </div>
       <div className="footer-bottom">

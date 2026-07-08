@@ -17,7 +17,7 @@ const Navbar = () => {
         {/* 👇 Here is the new Resume Link in the Navbar 👇 */}
         <li>
           <a 
-            href="https://drive.google.com/file/d/16LuEbDRoZef_lIKA-UpjCA-qLnglOX7Z/view?usp=sharing" 
+            href="https://drive.google.com/file/d/130Fixmg5HgZDQDVbwz-aj4oOhJdph6cr/view?usp=sharing" 
             target="_blank" 
             rel="noreferrer"
             style={{ color: '#8b5cf6', fontWeight: 'bold' }}
